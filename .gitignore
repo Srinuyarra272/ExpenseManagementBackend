@@ -1,0 +1,109 @@
+# .gitignore for .NET 8 projects
+# Recommended ignores for Visual Studio, Rider, VS Code and dotnet builds
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+out/
+artifacts/
+
+# VS Code workspace settings
+.vscode/
+
+# Visual Studio
+.vs/
+
+# Rider
+.idea/
+
+# NuGet packages
+*.nupkg
+# NuGet v3's project.json files
+project.lock.json
+project.fragment.lock.json
+
+# Restore results
+.package/
+.packages/
+packages/
+.nuget/
+
+# Publish output
+/publish/
+/*.Publish.xml
+
+# IIS Express
+/.vs/Config/launchSettings.json
+/.vs/*/applicationhost.config
+
+# User secrets (do not commit secret store)
+secrets.json
+appsettings.Development.json
+
+# Logs
+*.log
+logs/
+
+# Test results
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.trx
+
+# DotCover
+*.dotCover
+
+# Rider and ReSharper
+_ReSharper*/
+*._ReSharper*
+*.DotSettings.user
+
+# Temporary files
+*.tmp
+*.temp
+*.cache
+
+# Databases
+*.mdf
+*.ldf
+*.sqlite
+*.db
+*.db-journal
+
+# Certificates and keys
+*.pfx
+*.key
+*.cer
+*.pem
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Azure Web App publish settings
+*.PublishSettings
+
+# VS generated files
+*.vspscc
+*.vssscc
+
+# Packaging
+*.zip
+*.tar.gz
+
+# JetBrains Rider caches
+.idea/
+.idea/*
+
+# Others
+node_modules/
+
+# End of .gitignore
