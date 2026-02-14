@@ -69,7 +69,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngular",
-        builder => builder.WithOrigins("http://localhost:4200", "https://localhost:4200", "http://127.0.0.1:4200", "http://localhost:4201")
+        builder => builder.AllowAnyOrigin()
                           .AllowAnyMethod()
                           .AllowAnyHeader());
 });
