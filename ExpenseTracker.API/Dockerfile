@@ -1,6 +1,6 @@
-# Multi-stage Dockerfile for .NET 8 ASP.NET Core API
+# Multi-stage Dockerfile for .NET 9 ASP.NET Core API
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /src
 
 # Copy csproj and restore as distinct layers
@@ -12,7 +12,7 @@ COPY . .
 WORKDIR /src/ExpenseTracker.API
 RUN dotnet publish "ExpenseTracker.API.csproj" -c Release -o /app/publish /p:TrimUnusedDependencies=true
 
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS runtime
 WORKDIR /app
 ENV ASPNETCORE_URLS=http://+:80
 COPY --from=build /app/publish .
